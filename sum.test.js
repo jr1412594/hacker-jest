@@ -3,6 +3,7 @@ const greeting = require('./greeting');
 const getGrade = require('./getGrade');
 const rectagle = require('./rectangleObject');
 const getMiddle = require('./getMiddle');
+const getCount = require('./getVowelCount');
 const { expect } = require('@jest/globals');
 
 
@@ -33,3 +34,7 @@ test('return rectagle object', () => {
 test('returns middle character(s) of pierogi to be r', () => {
     expect(getMiddle('pierogi')).toBe('r');
 })
+
+test('returns vowel count, so 5 for the string abracadabra', () => {
+    expect(getCount('abracadabra')).toBe(5);
+});
