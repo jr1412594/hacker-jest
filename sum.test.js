@@ -2,6 +2,7 @@ const sum = require('./sum');
 const greeting = require('./greeting');
 const getGrade = require('./getGrade');
 const rectagle = require('./rectangleObject');
+const getMiddle = require('./getMiddle');
 const { expect } = require('@jest/globals');
 
 
@@ -28,3 +29,7 @@ test('sets grade based on score of 10 to be E',() => {
 test('return rectagle object', () => {
     expect(rectagle(4,5)).toEqual({'area': 20, 'length': 4, "perimeter": 18, 'width': 5});
 });
+
+test('returns middle character(s) of pierogi to be r', () => {
+    expect(getMiddle('pierogi')).toBe('r');
+})
