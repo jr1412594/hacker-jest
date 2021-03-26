@@ -20,12 +20,12 @@
 
 function findMissingLetter(array){
     let alphabetArray = String(array) === String(array).toUpperCase() ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('') : 'abcdefghijklmnopqrstuvwxyz'.split('');
-  
+
     let firstLetterOfOriginalArray = array[0];
     let segmentArrayStart = alphabetArray.find(e => e === firstLetterOfOriginalArray)
-  
+
     let fullTestArray = alphabetArray.splice(alphabetArray.indexOf(segmentArrayStart),array.length)
-  
+
     let missingLetter = fullTestArray.filter(x => !array.includes(x));
     return String(missingLetter)
-  }
+}
