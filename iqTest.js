@@ -18,3 +18,13 @@ function iqTest(numbers){
     }
     return evenArray.length === 1 ? numbersArray.indexOf(evenArray[0])+1 : numbersArray.indexOf(oddArray[0])+1
   }
+
+///refactor below
+  function iqTest(numbers){
+    let numbersArray = numbers.split(' ');
+    
+    let evenArray = numbersArray.filter(x => x % 2 === 0);
+    let oddArray = numbersArray.filter(x=> x % 2 !== 0)
+    
+    return evenArray.length === 1 ? numbersArray.indexOf(evenArray[0])+1 : numbersArray.indexOf(oddArray[0])+1;
+  }
