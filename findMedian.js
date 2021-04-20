@@ -17,4 +17,7 @@ var findMedianSortedArrays = function(nums1, nums2) {
       }
     }
       return result
+
+
+      ///will this be the one to change some stuff
   }
